@@ -1,0 +1,26 @@
+{
+  "source_id": "src_paper_debnath2025",
+  "title": "A Comprehensive Survey of Prompt Engineering Techniques in Large Language Models",
+  "url": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.174140719.96375390/v2",
+  "author": "Tonmoy Debnath, Md Nurul Absar Siddiky, Muhammad Enayetur Rahman, Prosenjit Das, Antu Kumar Guha, Muhammad Rezaur Rahman, H. M. Dipu Kabir",
+  "organization": "Old Dominion University, UNC Charlotte, Khulna University, Charles Sturt University",
+  "date_published": "2025-10-22",
+  "date_accessed": "2026-03-27",
+  "source_type": "preprint",
+  "trust_tier": "T2",
+  "extraction_method": "manual",
+  "content_hash": "debnath2025comprehensive",
+  "snapshot_path": "corpus/raw/debnath2025_comprehensive_survey.pdf",
+  "normalized_path": "",
+  "extraction_notes": "Comprehensive survey covering fundamental and advanced prompting techniques. Categorized by application domain. Includes taxonomy diagram. Covers zero-shot, few-shot, CoT variants, RAG, self-consistency, emotion prompting, code prompting, and optimization techniques. Emphasizes prompt sensitivity and hallucination reduction.",
+  "topics": ["prompt engineering", "taxonomy", "chain-of-thought", "RAG", "self-consistency", "emotion prompting", "hallucination reduction", "code prompting"],
+  "key_claims": [
+    "Prompt engineering is empirical with no standardized framework for designing effective prompts",
+    "Well-structured and context-rich prompts help AI generate more accurate, relevant, and detailed responses",
+    "Many prompting techniques are susceptible to subtle variations in wording",
+    "Chain-of-Symbol prompting boosts ChatGPT accuracy from 31.8% to 92.6% on Brick World tasks with 65.8% token reduction",
+    "Thread of Thought shows 47.20% improvement in chaotic contexts for question answering",
+    "Chain-of-Table improves tabular reasoning by 8.69% on TabFact and 6.72% on WikiTQ",
+    "Logic-of-Thought improves CoT accuracy on ReClor by 4.35%"
+  ]
+}

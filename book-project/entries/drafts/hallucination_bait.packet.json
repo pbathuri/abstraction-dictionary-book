@@ -1,0 +1,43 @@
+{
+  "headword": "hallucination bait",
+  "slug": "hallucination_bait",
+  "family": "failure_mode",
+  "generated_at": "2026-03-27T00:00:00",
+  "source_digest": {
+    "source_count": 5,
+    "source_ids": ["src_hallucination_001", "src_hallucination_002", "src_hallucination_003", "src_hallucination_004", "src_hallucination_005"],
+    "trust_tiers": {
+      "src_hallucination_001": "T1",
+      "src_hallucination_002": "T1",
+      "src_hallucination_003": "T2",
+      "src_hallucination_004": "T2",
+      "src_hallucination_005": "T2"
+    }
+  },
+  "contrast_terms": ["grounding", "source anchoring", "verification loop", "confabulation", "vagueness"],
+  "taxonomy_context": {
+    "parent": null,
+    "children": ["phantom citation", "invented capability"],
+    "synonyms": ["fabrication inducement"]
+  },
+  "open_questions": [
+    "What prompt structures are most likely to induce hallucination?",
+    "How does hallucination bait differ from asking questions the model cannot answer?",
+    "What agent workflow patterns reduce hallucination risk?",
+    "Which model tiers are most susceptible to hallucination bait?"
+  ],
+  "research_notes": [
+    "Models hallucinate more when asked for specific details without source material",
+    "Asking for citations by name without providing them is a classic hallucination trigger",
+    "Instruction to 'always provide an answer' overrides the model's uncertainty signals",
+    "Grounding techniques (RAG, source anchoring) measurably reduce hallucination rates",
+    "Hallucination rates vary by domain: factual recall > reasoning > creative tasks"
+  ],
+  "writing_guidance": {
+    "target_length_words": "1200-2500",
+    "schema_reference": "ENTRY_SCHEMA.md",
+    "style_reference": "STYLE_GUIDE.md",
+    "note_box_recommendation": "common_trap",
+    "example_domains": ["fact-checking", "research", "legal/medical contexts"]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "src_paper_schulhoff2025",
+  "title": "The Prompt Report: A Systematic Survey of Prompt Engineering Techniques",
+  "url": "https://arxiv.org/abs/2406.06608v6",
+  "author": "Sander Schulhoff, Michael Ilie, Nishant Balepur, et al.",
+  "organization": "University of Maryland, Learn Prompting, OpenAI, Stanford, Microsoft",
+  "date_published": "2025-02-26",
+  "date_accessed": "2026-03-27",
+  "source_type": "peer_reviewed_survey",
+  "trust_tier": "T1",
+  "extraction_method": "manual",
+  "content_hash": "schulhoff2025promptreport",
+  "snapshot_path": "corpus/raw/schulhoff2025_prompt_report.pdf",
+  "normalized_path": "",
+  "extraction_notes": "Most comprehensive prompting survey to date. 58 text-based prompting techniques, 33 vocabulary terms, 40 multimodal techniques. Taxonomy of prompt components: directive, examples, output formatting, style instructions, role. Covers ICL, thought generation, decomposition, ensembling, self-criticism. Includes agents, security, alignment. PRISMA-based systematic review of 1,565 papers.",
+  "topics": ["prompt engineering", "taxonomy", "in-context learning", "chain-of-thought", "decomposition", "self-criticism", "agents", "prompt terminology", "style instructions", "role prompting", "output formatting"],
+  "key_claims": [
+    "58 distinct text-based prompting techniques identified through PRISMA systematic review",
+    "Prompt components include: directive, examples, output formatting, style instructions, role, additional information",
+    "Prompting is defined as the process of providing a prompt to a GenAI which then generates a response",
+    "A prompt template is a function containing variables replaced by media to create a prompt",
+    "Style instructions modify output stylistically rather than structurally",
+    "Role/persona prompting is a frequently discussed component that can improve writing and style",
+    "Structuring outputs may reduce performance on some tasks but other research shows it may improve performance",
+    "Prompt engineering is the iterative process of developing a prompt by modifying the prompting technique",
+    "Decomposition techniques include DECOMP, Faithful CoT, Least-to-Most, Plan-and-Solve, Tree-of-Thought, Skeleton-of-Thought"
+  ]
+}

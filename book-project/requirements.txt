@@ -1,0 +1,13 @@
+# Core dependencies
+openai-agents>=0.13.0
+scrapling>=0.4.0
+requests>=2.31.0
+pydantic>=2.0.0
+
+# Export pipeline
+# pandoc: install via brew (brew install pandoc)
+
+# Testing
+pytest>=8.0.0
+
+# Optional: humanizer patterns applied via prompts, not a pip package

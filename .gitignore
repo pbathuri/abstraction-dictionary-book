@@ -1,0 +1,23 @@
+.DS_Store
+**/.DS_Store
+.cursor/
+.idea/
+*.swp
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Book project: cloned upstream deps (large; use submodule or re-clone if needed)
+book-project/external/
+
+# Optional: keep PDFs local only (remove this line to track papers)
+*.pdf
+
+# Exports / build artifacts (regenerate from scripts)
+book-project/exports/**/*.pdf
+book-project/exports/**/*.epub
+book-project/logs/

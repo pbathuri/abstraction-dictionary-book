@@ -1,0 +1,68 @@
+[
+  {
+    "project": "ResumeForge",
+    "path": "/Users/prady/Desktop/ML_Project_M_Spring26/",
+    "description": "Local-first resume tailoring: parse JD/resume, score alignment, Ollama-backed rewrites, LaTeX/PDF export. Prompts live in inherited YAML packs; FastAPI calls Ollama with JSON-only contracts.",
+    "prompt_examples": [
+      "YAML (global_base): truthfulness_constraints — Never fabricate employers, titles, dates...; rewrite_policy conservative|balanced|aggressive_truthful.",
+      "YAML (software_engineering): inherits global_base + industry_base; preferred_verbs, anti_patterns, section_specific_rewrite_instructions.",
+      "ollama_provider.structured_extract system: 'You are a deterministic extraction assistant. Return strict JSON only. Do not invent facts. Keep confidence conservative.'",
+      "ollama_provider.critique_resume system: 'You are a resume critic. Prioritize truthfulness, ATS safety, and evidence quality. Return strict JSON.'",
+      "rewrite_engine merges constraints with truthfulness list: never fabricate achievements; never inflate title/scope; require explicit evidence for metrics."
+    ],
+    "patterns_observed": ["YAML inheritance for prompt/policy packs", "JSON-schema hints in user prompts + strict key validation", "System/user split with deterministic fallback", "Separation of domain policy (YAML) from API mechanics (Python)"],
+    "lessons": "Treat resume/ATS as a safety-critical domain: repeat truthfulness in system prompts and structured constraints; externalize industry tone in composable YAML; always validate JSON and plan a non-LLM fallback.",
+    "book_entries_relevant": ["constrain", "grounding", "scaffolding", "rubric", "falsifiability"]
+  },
+  {
+    "project": "Clap OpsPilot",
+    "path": "/Users/prady/Desktop/Clap_OpsPilot/",
+    "description": "Consolidated OpsPilot workspace with prompt library for agent OS: product north star, control model, phased roadmap, and SHOT prompts that drive architecture reconciliation.",
+    "prompt_examples": [
+      "01_product_north_star.md: Vision — local-first portable agent; supervised desktop operator.",
+      "SHOT_1_ARCHITECTURE_PROMPT.md: 'You are working inside the workflow-llm-dataset project... Do not treat this as a cold start.' Grounding list of files; hard rules: do not rewrite whole repo in Shot 1; inspect actual code; required outputs REPO_REALITY.md, REFERENCE_FRAMEWORK_MAPPING.md."
+    ],
+    "patterns_observed": ["Numbered prompt pack as single source of truth", "Meta-prompts requiring file-level deliverables", "Explicit workspace continuity (not cold start)", "Shot-based scoping to prevent runaway refactors"],
+    "lessons": "Large agent projects benefit from a documented prompt pack referenced by SHOT prompts; tie every instruction to artifacts (paths) and verification (code inspection).",
+    "book_entries_relevant": ["grounding", "scope", "delegation", "decomposition", "escalation"]
+  },
+  {
+    "project": "Form8 n8n Workflow",
+    "path": "/Users/prady/Desktop/Form8_n8n_Workflow/",
+    "description": "Nutraceutical platform with n8n workflow: scrape data, aggregate demand, Ollama LangChain agent for strategic analysis, Google Sheets export.",
+    "prompt_examples": [
+      "PRODUCT_RESEARCH_WORKFLOW_PROMPT.md: Meta-prompt to build entire n8n workflow (phases 1-6, nodes, delays, Ollama chat URL, sheet tabs).",
+      "Embedded agent systemMessage: senior nutraceutical strategist for Indian market; user text includes six numbered deliverables."
+    ],
+    "patterns_observed": ["Pipeline: deterministic extraction → single LLM call with full context", "Dual-layer role (system persona + user task with numbered bullets)", "Variable injection from prior nodes"],
+    "lessons": "Compress tabular data into readable report before the LLM step; use numbered outputs so downstream use is predictable.",
+    "book_entries_relevant": ["orchestration", "pipeline", "framing", "constrain", "register"]
+  },
+  {
+    "project": "AI Ethics Coach",
+    "path": "/Users/prady/Desktop/Liesure_Projects/Personal_prjs/Ai ethics coach/",
+    "description": "Chrome extension: academic prompt enhancer with variants (Socratic, research, lab, citation-ready), integrity guardrails.",
+    "prompt_examples": [
+      "buildVariants sharedPillars: Audience; Academic integrity: no ghostwriting; Citations; Evidence; Style; Length.",
+      "outputScaffold: numbered sections Direct answer, Key terms, Next steps, How to verify, References.",
+      "Role strings: Socratic / Research / Lab / Citation-ready composed via scaffoldPrompt(Context, Role, Task, Constraints)."
+    ],
+    "patterns_observed": ["Multiple prompt variants from shared pillars", "Fixed output skeleton for safety", "Dynamic ethics note from policy URLs"],
+    "lessons": "Educational UIs benefit from reusable pillars plus one output scaffold; vary only role to avoid duplicating safety text.",
+    "book_entries_relevant": ["scaffolding", "register", "audience specification", "modularity", "constrain"]
+  },
+  {
+    "project": "Karpathy autoresearch",
+    "path": "external/autoresearch-macos/program.md",
+    "description": "Markdown spec for autonomous coding agent: edits only train.py, runs fixed-time experiments, logs metrics to TSV, advances or reverts git, must not ask human to continue.",
+    "prompt_examples": [
+      "What you CANNOT do: modify prepare.py; install packages; modify evaluation harness.",
+      "LOOP FOREVER: tune → commit → run → grep metrics → record TSV → advance or reset.",
+      "NEVER STOP: do not ask 'should I keep going?'; autonomous until human interrupts.",
+      "Simplicity criterion: A 0.001 improvement that adds 20 lines of hacky code? Probably not worth it."
+    ],
+    "patterns_observed": ["Hard allow/deny file boundaries", "Single objective metric + logging contract", "Git as state machine", "Long-horizon autonomy with explicit stop conditions"],
+    "lessons": "Autonomous agents need immutable evaluation, one editable surface, machine-readable logs, and explicit silence rules.",
+    "book_entries_relevant": ["delegation", "constrain", "verification loop", "audit trail", "pipeline"]
+  }
+]

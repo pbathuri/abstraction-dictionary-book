@@ -1,0 +1,26 @@
+{
+  "source_id": "src_paper_ari2025",
+  "title": "5C Prompt Contracts: A Minimalist, Creative-Friendly, Token-Efficient Design Framework for Individual and SME LLM Usage",
+  "url": "https://arxiv.org/abs/2507.07045v1",
+  "author": "Ugur Ari",
+  "organization": "Independent AI Research",
+  "date_published": "2025-07-10",
+  "date_accessed": "2026-03-27",
+  "source_type": "preprint",
+  "trust_tier": "T2",
+  "extraction_method": "manual",
+  "content_hash": "ari2025fivec",
+  "snapshot_path": "corpus/raw/ari2025_5c_prompt_contracts.pdf",
+  "normalized_path": "",
+  "extraction_notes": "Proposes 5C Prompt Contract framework: Character, Cause, Constraint, Contingency, Calibration. Tested across OpenAI, Anthropic, DeepSeek, Gemini. Key finding: 5C achieves 54.75 avg input tokens vs 348.75 for DSL and 346.25 for unstructured. Demonstrates that minimal structure can maintain output quality while reducing token cost by 84%.",
+  "topics": ["prompt design", "constraint", "token efficiency", "prompt frameworks", "5C", "calibration", "contingency"],
+  "key_claims": [
+    "5C framework achieves 54.75 average input tokens vs 348.75 for DSL and 346.25 for unstructured across all LLMs tested",
+    "5C framework maintains comparable output quality (777.58 avg output tokens) while reducing input overhead by ~84%",
+    "Five components: Character (role), Cause (goal), Constraint (boundaries), Contingency (fallback), Calibration (output optimization)",
+    "Tested across OpenAI GPT, Anthropic Claude, DeepSeek, and Google Gemini",
+    "Minimalist structure preserves the LLM's 'entropy budget' for deeper semantic exploration",
+    "DSL-style prompts produce more concise but less creative outputs (711.50 avg output tokens)",
+    "Unstructured prompts produce highest output variance and least predictable adherence to user intent"
+  ]
+}

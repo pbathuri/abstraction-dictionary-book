@@ -1,0 +1,26 @@
+{
+  "title": "The Abstraction Dictionary",
+  "author": "Kastle Light",
+  "compiled_at": "2026-03-27T06:16:18.903828",
+  "full_version": {
+    "word_count": 92576,
+    "format": [
+      "md",
+      "epub",
+      "html",
+      "pdf"
+    ]
+  },
+  "compact_version": {
+    "word_count": 84220,
+    "format": [
+      "md",
+      "epub",
+      "html",
+      "pdf"
+    ]
+  },
+  "entry_count": 75,
+  "experiment_data_points": 11400,
+  "charts": 7
+}

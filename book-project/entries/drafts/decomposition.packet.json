@@ -1,0 +1,43 @@
+{
+  "headword": "decomposition",
+  "slug": "decomposition",
+  "family": "core_abstraction",
+  "generated_at": "2026-03-27T00:00:00",
+  "source_digest": {
+    "source_count": 5,
+    "source_ids": ["src_decomposition_001", "src_decomposition_002", "src_decomposition_003", "src_decomposition_004", "src_decomposition_005"],
+    "trust_tiers": {
+      "src_decomposition_001": "T1",
+      "src_decomposition_002": "T1",
+      "src_decomposition_003": "T2",
+      "src_decomposition_004": "T2",
+      "src_decomposition_005": "T2"
+    }
+  },
+  "contrast_terms": ["hierarchy", "modularity", "chunking", "overcompression", "monolithic instruction"],
+  "taxonomy_context": {
+    "parent": null,
+    "children": ["chunking", "partitioning"],
+    "synonyms": ["breakdown", "segmentation"]
+  },
+  "open_questions": [
+    "When does decomposition help versus hurt prompt performance?",
+    "How does decomposition interact with chain-of-thought reasoning?",
+    "What is the right granularity for sub-task decomposition?",
+    "How does decomposition map to agent handoff patterns?"
+  ],
+  "research_notes": [
+    "Chain-of-thought prompting is a form of reasoning decomposition (Wei et al., 2022)",
+    "Least-to-most prompting decomposes complex problems into progressive sub-problems",
+    "In agent architectures, decomposition maps directly to task delegation",
+    "Over-decomposition can fragment context and lose coherence",
+    "Decomposition is most beneficial for tasks requiring multi-step reasoning"
+  ],
+  "writing_guidance": {
+    "target_length_words": "1200-2500",
+    "schema_reference": "ENTRY_SCHEMA.md",
+    "style_reference": "STYLE_GUIDE.md",
+    "note_box_recommendation": "workflow_note",
+    "example_domains": ["code review", "research task", "complex analysis"]
+  }
+}

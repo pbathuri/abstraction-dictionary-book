@@ -1,0 +1,112 @@
+{
+  "specificity": {
+    "headword": "specificity",
+    "slug": "specificity",
+    "family": "core_abstraction",
+    "synonyms": ["precision", "exactness", "definiteness"],
+    "parent": null,
+    "children": ["granularity", "resolution"],
+    "overlaps_with": ["precision", "explicitness", "clarity"],
+    "contrast_set": ["vagueness", "ambiguity", "generality"],
+    "status": "flagship"
+  },
+  "decomposition": {
+    "headword": "decomposition",
+    "slug": "decomposition",
+    "family": "core_abstraction",
+    "synonyms": ["breakdown", "segmentation"],
+    "parent": null,
+    "children": ["chunking", "partitioning"],
+    "overlaps_with": ["hierarchy", "modularity"],
+    "contrast_set": ["overcompression", "monolithic instruction"],
+    "status": "flagship"
+  },
+  "framing": {
+    "headword": "framing",
+    "slug": "framing",
+    "family": "core_abstraction",
+    "synonyms": ["perspective-setting", "contextualization"],
+    "parent": null,
+    "children": ["reframing", "lens"],
+    "overlaps_with": ["perspective", "scope", "context"],
+    "contrast_set": ["raw instruction", "unframed query"],
+    "status": "flagship"
+  },
+  "grounding": {
+    "headword": "grounding",
+    "slug": "grounding",
+    "family": "core_abstraction",
+    "synonyms": ["anchoring", "substantiation"],
+    "parent": null,
+    "children": ["source anchoring", "citation"],
+    "overlaps_with": ["anchoring", "reference", "provenance"],
+    "contrast_set": ["hallucination bait", "ungrounded generation"],
+    "status": "flagship"
+  },
+  "constrain": {
+    "headword": "constrain",
+    "slug": "constrain",
+    "family": "instructional_action",
+    "synonyms": ["restrict", "limit", "bound"],
+    "parent": null,
+    "children": ["filter", "exclude", "prohibit"],
+    "overlaps_with": ["specificity", "scope"],
+    "contrast_set": ["elaborate", "expand", "generate"],
+    "status": "flagship"
+  },
+  "delegation": {
+    "headword": "delegation",
+    "slug": "delegation",
+    "family": "agent_workflow",
+    "synonyms": ["task assignment", "dispatch"],
+    "parent": "orchestration",
+    "children": ["routing", "assignment"],
+    "overlaps_with": ["handoff", "routing"],
+    "contrast_set": ["direct execution", "monolithic agent"],
+    "status": "flagship"
+  },
+  "verification_loop": {
+    "headword": "verification loop",
+    "slug": "verification_loop",
+    "family": "agent_workflow",
+    "synonyms": ["check cycle", "validation loop"],
+    "parent": "quality_control",
+    "children": ["self-critique", "rubric check"],
+    "overlaps_with": ["rubric", "test harness"],
+    "contrast_set": ["single-pass generation", "unchecked output"],
+    "status": "flagship"
+  },
+  "hallucination_bait": {
+    "headword": "hallucination bait",
+    "slug": "hallucination_bait",
+    "family": "failure_mode",
+    "synonyms": ["fabrication inducement"],
+    "parent": null,
+    "children": ["phantom citation", "invented capability"],
+    "overlaps_with": ["confabulation", "false confidence"],
+    "contrast_set": ["grounding", "source anchoring", "verification loop"],
+    "status": "flagship"
+  },
+  "context_windowing": {
+    "headword": "context windowing",
+    "slug": "context_windowing",
+    "family": "context_architecture",
+    "synonyms": ["window management", "context allocation"],
+    "parent": null,
+    "children": ["token economy", "priority stacking"],
+    "overlaps_with": ["context budget", "truncation strategy"],
+    "contrast_set": ["context overflow", "window saturation"],
+    "status": "flagship"
+  },
+  "rubric": {
+    "headword": "rubric",
+    "slug": "rubric",
+    "family": "quality_control",
+    "synonyms": ["scoring guide", "evaluation criteria"],
+    "parent": null,
+    "children": ["acceptance criteria", "pass/fail gate"],
+    "overlaps_with": ["test harness", "verification loop"],
+    "contrast_set": ["vague evaluation", "subjective judgment"],
+    "status": "flagship"
+  }
+}

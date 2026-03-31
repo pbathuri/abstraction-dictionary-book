@@ -1,0 +1,74 @@
+{
+  "headword": "delegation",
+  "slug": "delegation",
+  "family": "agent_workflow",
+  "generated_at": "2026-03-27T12:00:00",
+  "source_digest": {
+    "source_count": 6,
+    "source_ids": [
+      "src_delegation_001",
+      "src_delegation_002",
+      "src_delegation_003",
+      "src_delegation_004",
+      "src_delegation_005",
+      "src_delegation_006"
+    ],
+    "trust_tiers": {
+      "src_delegation_001": "T1",
+      "src_delegation_002": "T1",
+      "src_delegation_003": "T2",
+      "src_delegation_004": "T2",
+      "src_delegation_005": "T2",
+      "src_delegation_006": "T2"
+    },
+    "source_notes": {
+      "src_delegation_001": "OpenAI Agents SDK documentation — Agent, Runner, handoffs, tool definitions. Demonstrates delegation via handoff objects with explicit tool and agent references. T1 (official documentation).",
+      "src_delegation_002": "Anthropic research on multi-agent architectures — discusses task routing, authority boundaries, and failure propagation in agentic systems. T1 (published research blog with named authors).",
+      "src_delegation_003": "LangGraph documentation on agent supervisors and sub-agent routing — illustrates delegation as graph edges with conditional routing and state passing. T2 (official docs, named org).",
+      "src_delegation_004": "Microsoft AutoGen documentation — GroupChat delegation patterns, speaker selection, termination conditions, and round-robin vs. directed delegation. T2 (official docs).",
+      "src_delegation_005": "CrewAI documentation on agent role assignment, task objects, and expected_output fields. Shows structured delegation with explicit deliverable specs. T2 (official docs, named org).",
+      "src_delegation_006": "Prompt engineering community observations on delegation failure patterns — vague delegation, authority leaks, and the 'telephone game' effect in multi-agent pipelines. T2 (aggregated from named-author technical blogs)."
+    }
+  },
+  "contrast_terms": [
+    "handoff",
+    "routing",
+    "orchestration",
+    "decomposition",
+    "assignment",
+    "dispatch",
+    "direct execution"
+  ],
+  "taxonomy_context": {
+    "parent": "orchestration",
+    "children": ["routing", "assignment"],
+    "synonyms": ["task assignment", "dispatch"],
+    "overlaps_with": ["handoff", "routing", "decomposition"],
+    "contrast_set": ["direct execution", "monolithic agent", "self-assignment"]
+  },
+  "open_questions": [
+    "What distinguishes delegation from handoff in agentic systems?",
+    "What is the minimum information a delegation instruction must contain to be reliable?",
+    "How does delegation quality degrade across chain depth?",
+    "What authority boundaries prevent delegation from leaking scope?",
+    "How does delegation in agent workflows differ from delegation as a management concept?"
+  ],
+  "research_notes": [
+    "In openai-agents-python, delegation is implemented via handoff objects — an Agent can hand off to another Agent with a description of when/why, plus optional tool definitions that travel with the handoff.",
+    "Anthropic's multi-agent research emphasizes that delegation quality is bottlenecked by how precisely the delegating agent specifies the deliverable, the format, and the completion criteria — vague delegation propagates ambiguity.",
+    "LangGraph supervisor patterns show delegation as conditional graph edges: the supervisor evaluates state and routes to the appropriate sub-agent, with each edge carrying structured context.",
+    "AutoGen's GroupChat model delegates by speaker selection, but the lack of structured task objects means delegation is implicit in conversation turn order — a known limitation for complex pipelines.",
+    "CrewAI makes delegation explicit: Task objects have description, expected_output, agent assignment, and tools. This structured approach reduces ambiguity but increases setup overhead.",
+    "Common failure: delegation chains of depth 3+ degrade in specificity at each hop, producing a 'telephone game' effect where the final agent's understanding of the original goal is substantially distorted.",
+    "Authority boundary is an underspecified concept in most frameworks — an agent delegated to 'research competitors' may interpret that as permission to make web requests, spend API credits, or modify shared state, depending on what tools are available."
+  ],
+  "writing_guidance": {
+    "target_length_words": "1500-2200",
+    "schema_reference": "ENTRY_SCHEMA.md",
+    "style_reference": "STYLE_GUIDE.md",
+    "note_box_recommendation": "which_word",
+    "note_box_rationale": "Delegation vs. handoff is the most common confusion in this neighborhood. A 'Which Word?' box sharpens the distinction.",
+    "example_domains": ["research automation", "code review pipeline", "document processing"],
+    "tone_notes": "This is an agent_workflow entry. The audience expects systems-level thinking. Write like an architect explaining a design pattern, not like a manager explaining org structure. The examples should look like real agent configuration, not metaphors."
+  }
+}
