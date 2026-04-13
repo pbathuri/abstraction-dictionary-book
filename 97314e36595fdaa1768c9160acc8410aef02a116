@@ -1,0 +1,27 @@
+README.md
+  17a37eae4e1d3056 1-42
+.gitignore
+  17a37eae4e1d3056 14,17,20-39
+book-project/README.md
+  17a37eae4e1d3056 1,3,5,7-11,13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "97314e36595fdaa1768c9160acc8410aef02a116",
+  "prompts": {
+    "17a37eae4e1d3056": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "8dc05911-1ae5-4d3a-88fb-ee832689e2b5",
+        "model": "composer-2"
+      },
+      "human_author": "pbathuri",
+      "messages": [],
+      "total_additions": 73,
+      "total_deletions": 92,
+      "accepted_lines": 73,
+      "overriden_lines": 0
+    }
+  }
+}
