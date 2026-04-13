@@ -11,13 +11,30 @@ venv/
 .env.*
 !.env.example
 
-# Book project: cloned upstream deps (large; use submodule or re-clone if needed)
+# Cloned upstream deps (large)
 book-project/external/
 
-# Optional: keep PDFs local only (remove this line to track papers)
+# Root papers / binaries (optional local only)
 *.pdf
 
-# Exports / build artifacts (regenerate from scripts)
-book-project/exports/**/*.pdf
-book-project/exports/**/*.epub
+# --- Manuscript & book outputs (keep locally; not tracked here) ---
+book-project/entries/
+book-project/front_matter/
+book-project/appendices/
+book-project/exports/
+book-project/art/
+book-project/corpus/
+book-project/eval/
+book-project/taxonomy/
+book-project/style/
+
+# Book product prose / templates (not the tooling repo)
+book-project/BOOK_BIBLE.md
+book-project/STYLE_GUIDE.md
+book-project/ENTRY_TEMPLATE_V2.md
+
+# Editor noise
+book-project/.Rhistory
+book-project/**/.Rhistory
+
 book-project/logs/
