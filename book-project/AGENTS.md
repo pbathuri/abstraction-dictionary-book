@@ -1,4 +1,4 @@
-# AGENTS.md — Agent Definitions and Handoff Protocol
+# AGENTS.md - Agent Definitions and Handoff Protocol
 
 ## Pipeline Agents
 

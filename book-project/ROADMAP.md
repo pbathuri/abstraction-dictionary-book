@@ -1,4 +1,4 @@
-# ROADMAP — Production Schedule
+# ROADMAP - Production Schedule
 
 ## Phase 1: Foundation & Pilot (Current)
 

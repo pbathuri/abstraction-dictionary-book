@@ -2,7 +2,7 @@
 
 # The Abstraction Dictionary · authoring pipeline
 
-**Tooling that powers a long-form reference manuscript — source acquisition, auditing, taxonomy, entry packets, drafting/review automation, evaluation gates, compilation.**
+**Tooling that powers a long-form reference manuscript - source acquisition, auditing, taxonomy, entry packets, drafting/review automation, evaluation gates, compilation.**
 
 <br/>
 
@@ -15,7 +15,7 @@
 
 ---
 
-## What this repo is — and isn't
+## What this repo is - and isn't
 
 This repository is the **tooling** behind the manuscript. The manuscript itself, figure art, and research corpus are **not** stored here; they live locally and are gitignored.
 
@@ -27,15 +27,15 @@ If you're here to build: this is the pipeline. If you're here to read: the book 
 
 | Path | Purpose |
 |------|---------|
-| `book-project/scripts/` | Pipeline — collect · audit · taxonomy · packets · write/review/eval · compile drivers · prompt experiments |
+| `book-project/scripts/` | Pipeline - collect · audit · taxonomy · packets · write/review/eval · compile drivers · prompt experiments |
 | `book-project/prompts/` | Stage prompts for agents / CLI steps |
 | `book-project/docs/` | Tool audits · role maps · repo keep/drop notes |
-| `book-project/` + `*.md` | Pipeline contracts — `ENTRY_SCHEMA.md`, `SOURCE_POLICY.md`, `EVAL_POLICY.md`, `ROADMAP.md`, `AGENTS.md`, `program.md` |
+| `book-project/` + `*.md` | Pipeline contracts - `ENTRY_SCHEMA.md`, `SOURCE_POLICY.md`, `EVAL_POLICY.md`, `ROADMAP.md`, `AGENTS.md`, `program.md` |
 
 ### Local-only (gitignored)
 
 - Entry text (`entries/`), front matter, appendices, cover/figure art, compiled exports
-- `corpus/` — raw · normalized · snapshots · source cards
+- `corpus/` - raw · normalized · snapshots · source cards
 - Taxonomy outputs · eval run artifacts · `BOOK_BIBLE` / style / entry templates
 
 Clone this repo, then restore or generate those directories locally for a full build.
@@ -82,5 +82,5 @@ Original **code and pipeline documentation** in this repository: use per your pr
 ---
 
 <div align="center">
-<sub>Part of <a href="https://github.com/pbathuri">@pbathuri</a>'s <a href="https://github.com/pbathuri/Map_Projects_MAC">project portfolio</a> — long-form writing infrastructure.</sub>
+<sub>Part of <a href="https://github.com/pbathuri">@pbathuri</a>'s <a href="https://github.com/pbathuri/Map_Projects_MAC">project portfolio</a> - long-form writing infrastructure.</sub>
 </div>

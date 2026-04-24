@@ -17,7 +17,7 @@ For each source, confirm or adjust its trust tier:
 - **T1 (High):** Peer-reviewed paper, official model documentation, published benchmark with methodology
 - **T2 (Moderate):** Named-author blog from credible org, established guide, reputable tutorial
 - **T3 (Low):** Anonymous content, undated, single-source claims, community posts
-- **T4 (Unverified):** No author, no date, no institutional backing — flag for replacement
+- **T4 (Unverified):** No author, no date, no institutional backing - flag for replacement
 
 ### Quality Checks
 1. **Relevance:** Does this source actually address the headword's concept, or is it tangential?

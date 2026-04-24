@@ -1,4 +1,4 @@
-# Tool Audit — External Repositories
+# Tool Audit - External Repositories
 
 > Audited: 2026-03-27
 > Purpose: Evaluate each cloned repo for use in the Abstraction Dictionary authoring pipeline.
@@ -16,7 +16,7 @@
 | **Usable components** | `Fetcher`, `StealthyFetcher`, `DynamicFetcher`, `Spider` API, CLI |
 | **Patterns to borrow** | Adaptive CSS selection; separation of fetch vs parse; optional heavy deps behind extras |
 | **Skip** | Sponsored proxy pitches; full spider stack if single-URL fetch suffices; MCP server |
-| **Decision** | **KEEP** — Use as dependency for source acquisition |
+| **Decision** | **KEEP** - Use as dependency for source acquisition |
 
 ---
 
@@ -31,7 +31,7 @@
 | **Usable components** | `Agent`, `Runner`, tools, handoffs, guardrails, tracing |
 | **Patterns to borrow** | Handoffs for subagents; guardrails; tracing for debugging long pipelines; sessions for multi-step loops |
 | **Skip** | Lock-in assumptions if using non-OpenAI endpoints |
-| **Decision** | **KEEP** — Primary orchestration runtime |
+| **Decision** | **KEEP** - Primary orchestration runtime |
 
 ---
 
@@ -46,7 +46,7 @@
 | **Usable components** | `program.md` discipline only |
 | **Patterns to borrow** | Single-writable-artifact for agents; time-bounded runs; TSV experiment logs; read-only harness / editable strategy file split |
 | **Skip** | Entire ML training stack |
-| **Decision** | **REFERENCE** — Pattern library for agent operating procedures |
+| **Decision** | **REFERENCE** - Pattern library for agent operating procedures |
 
 ---
 
@@ -61,7 +61,7 @@
 | **Usable components** | Persona markdown templates; convert.sh for multiple platforms |
 | **Patterns to borrow** | Specialist roster + "when to use" tables; consistent structure (identity, deliverables, metrics) |
 | **Skip** | Treating every persona as production-vetted without review |
-| **Decision** | **ADAPT** — Curate relevant personas for book pipeline agents |
+| **Decision** | **ADAPT** - Curate relevant personas for book pipeline agents |
 
 ---
 
@@ -76,7 +76,7 @@
 | **Usable components** | SKILL.md as editorial checklist; anti-pattern tables |
 | **Patterns to borrow** | Numbered anti-patterns (significance inflation, em dash overuse, rule of three); before/after discipline; "add soul" beyond mechanical cleanup |
 | **Skip** | No CLI or API exists in-repo |
-| **Decision** | **KEEP** — Use as editorial skill content; port prompts to pipeline |
+| **Decision** | **KEEP** - Use as editorial skill content; port prompts to pipeline |
 
 ---
 
@@ -91,7 +91,7 @@
 | **Usable components** | Authoring UI; specimen of on-disk project layout |
 | **Patterns to borrow** | Small files per scene/chapter; index built from project; VCS-first storage philosophy |
 | **Skip** | GPL license implications; fiction-first assumptions |
-| **Decision** | **REFERENCE** — Borrow file organization discipline; optional as human editor |
+| **Decision** | **REFERENCE** - Borrow file organization discipline; optional as human editor |
 
 ---
 
@@ -106,7 +106,7 @@
 | **Usable components** | Compile pipeline, provider wrapper patterns, appendices generator, manuscript versioning |
 | **Patterns to borrow** | Env-based provider selection; versioned manuscript; single book directory as source of truth |
 | **Skip** | KDP/market-scraping pieces; tight Bash coupling |
-| **Decision** | **KEEP/ADAPT** — Fork compile scripts for our export pipeline |
+| **Decision** | **KEEP/ADAPT** - Fork compile scripts for our export pipeline |
 
 ---
 
@@ -121,7 +121,7 @@
 | **Usable components** | Glossary/index generation patterns; Org linking model |
 | **Patterns to borrow** | Per-story folder; indices subfolder; glossary sections; automatic reference updating |
 | **Skip** | Emacs dependency if team refuses it; fiction naming |
-| **Decision** | **ADAPT/REFERENCE** — Best cross-reference model among candidates |
+| **Decision** | **ADAPT/REFERENCE** - Best cross-reference model among candidates |
 
 ---
 
@@ -136,7 +136,7 @@
 | **Usable components** | Regression suite for tool surface; capability probing |
 | **Patterns to borrow** | Capability probe before tests; emulated tool calls; weighted complexity score |
 | **Skip** | Treating aggregate score as prose quality metric |
-| **Decision** | **KEEP** — Fork/adapt for pipeline CI |
+| **Decision** | **KEEP** - Fork/adapt for pipeline CI |
 
 ---
 
@@ -151,7 +151,7 @@
 | **Usable components** | Embed in web app for cover/figure touch-up |
 | **Patterns to borrow** | Operation history; export pipeline; React vs vanilla bridge |
 | **Skip** | Heavy React deps if only needing server-side ImageMagick |
-| **Decision** | **KEEP** — Use if building web UI for asset editing |
+| **Decision** | **KEEP** - Use if building web UI for asset editing |
 
 ---
 
@@ -166,7 +166,7 @@
 | **Usable components** | Patterns and prompt shapes; role separation; outline-as-context injection |
 | **Patterns to borrow** | Explicit agent roles; outline in system messages; capped editor-writer iterations |
 | **Skip** | Running as-is; AutoGen API is outdated |
-| **Decision** | **REFERENCE** — Lift prompts/structure into openai-agents orchestration |
+| **Decision** | **REFERENCE** - Lift prompts/structure into openai-agents orchestration |
 
 ---
 

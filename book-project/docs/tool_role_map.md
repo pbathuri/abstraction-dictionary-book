@@ -1,4 +1,4 @@
-# Tool Role Map — Pipeline Stage Assignments
+# Tool Role Map - Pipeline Stage Assignments
 
 > Each pipeline stage maps to one or more external repos for tooling, patterns, or reference.
 

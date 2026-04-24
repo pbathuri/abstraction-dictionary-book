@@ -1,4 +1,4 @@
-# ENTRY SCHEMA — Mandatory Structure for Every Entry
+# ENTRY SCHEMA - Mandatory Structure for Every Entry
 
 > Version: 1.0-pilot
 > Status: UNLOCKED (will be locked after pilot evaluation)

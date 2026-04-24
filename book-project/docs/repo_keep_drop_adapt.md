@@ -16,21 +16,21 @@
 
 ## Integration Priority
 
-### Tier 1 — Core Dependencies (install and configure first)
+### Tier 1 - Core Dependencies (install and configure first)
 1. openai-agents-python
 2. Scrapling
 
-### Tier 2 — Adapted Components (port patterns, not code)
+### Tier 2 - Adapted Components (port patterns, not code)
 3. humanizer (editorial prompts)
 4. agency-agents (persona templates)
 5. book-generator (compile scripts)
 
-### Tier 3 — Reference Only (read, don't import)
+### Tier 3 - Reference Only (read, don't import)
 6. autoresearch-macos
 7. novelWriter
 8. org-novelist
 9. ai-book-writer
 
-### Tier 4 — Conditional Use
+### Tier 4 - Conditional Use
 10. filerobot-image-editor (if web UI needed)
 11. LLMToolCallingTester (adapt for CI)

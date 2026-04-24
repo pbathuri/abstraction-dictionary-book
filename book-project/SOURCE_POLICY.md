@@ -1,4 +1,4 @@
-# SOURCE POLICY — Acquisition, Scoring, and Citation Standards
+# SOURCE POLICY - Acquisition, Scoring, and Citation Standards
 
 ## Principles
 

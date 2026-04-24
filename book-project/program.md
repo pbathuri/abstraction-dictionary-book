@@ -1,4 +1,4 @@
-# program.md — Operating Doctrine
+# program.md - Operating Doctrine
 
 > This file is the evolving operating doctrine for the Abstraction Dictionary authoring system.
 > Inspired by autoresearch-macos: keep it narrow, keep it editable, run tight loops.
